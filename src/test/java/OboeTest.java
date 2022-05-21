@@ -57,7 +57,7 @@ public class OboeTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals("The markup on this item is: 15.0%.", oboe.calculateMarkup(oboe.getPrice(), oboe.getSellingPrice()));
+        assertEquals("The markup on this item is: 15.00%.", oboe.calculateMarkup(oboe.getPrice(), oboe.getSellingPrice()));
     }
 
 }

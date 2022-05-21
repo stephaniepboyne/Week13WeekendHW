@@ -87,7 +87,8 @@ public abstract class Instrument implements IPlay, ISell{
         double difference = sellingPrice - price;
         double number = price / difference;
         double percent = 100.00 / number;
-        return "The markup on this item is: " + percent + "%.";
+        String result = String.format("%.2f", percent);
+        return "The markup on this item is: " + result + "%.";
     }
 
 }
